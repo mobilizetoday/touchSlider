@@ -248,7 +248,7 @@
 			};
 
 			function resetGraphItems() {
-				$(items).css('width', 'auto');
+				$(items).css('width', '');
 			}
 
 			function detectGraphIndex(i) {
@@ -259,7 +259,7 @@
 
 			function resizeItems() {
 				$.each(items, function() {
-					$(this).css('width', 'auto');
+					$(this).css('width', '');
 
 					var _w = $(this).width();
 					if (_w < width) {

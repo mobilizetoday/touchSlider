@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../jquery.touchSlider.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#gallery1').touchSlider({
+					mode: 'shift',
+					offset: 'auto'
+				});
+
+				$('#gallery2').touchSlider({
+					animation: 'js',
+					mode: 'shift',
+					offset: 'auto'
+				});
+
+				$('#gallery3').touchSlider({
+					animation: false,
+					mode: 'shift',
+					offset: 'auto'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Touch Events</h1>
+
+		<h2>animation: 'auto'</h2>
+
+		<div class="gallery-holder">
+			<div class="gallery" id="gallery1">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="box box1">item 1</div></div>
+						<div class="item"><div class="box box1">item 2</div></div>
+						<div class="item"><div class="box box1">item 3</div></div>
+						<div class="item"><div class="box box1">item 4</div></div>
+						<div class="item"><div class="box box1">item 5</div></div>
+						<div class="item"><div class="box box1">item 6</div></div>
+						<div class="item"><div class="box box1">item 7</div></div>
+						<div class="item"><div class="box box1">item 8</div></div>
+						<div class="item"><div class="box box1">item 9</div></div>
+						<div class="item"><div class="box box1">item 10</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>animation: 'js'</h2>
+
+		<div class="gallery-holder">
+			<div class="gallery" id="gallery2">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="box box2">item 1</div></div>
+						<div class="item"><div class="box box2">item 2</div></div>
+						<div class="item"><div class="box box2">item 3</div></div>
+						<div class="item"><div class="box box2">item 4</div></div>
+						<div class="item"><div class="box box2">item 5</div></div>
+						<div class="item"><div class="box box2">item 6</div></div>
+						<div class="item"><div class="box box2">item 7</div></div>
+						<div class="item"><div class="box box2">item 8</div></div>
+						<div class="item"><div class="box box2">item 9</div></div>
+						<div class="item"><div class="box box2">item 10</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>animation: false</h2>
+
+		<div class="gallery-holder">
+			<div class="gallery" id="gallery3">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="box box3">item 1</div></div>
+						<div class="item"><div class="box box3">item 2</div></div>
+						<div class="item"><div class="box box3">item 3</div></div>
+						<div class="item"><div class="box box3">item 4</div></div>
+						<div class="item"><div class="box box3">item 5</div></div>
+						<div class="item"><div class="box box3">item 6</div></div>
+						<div class="item"><div class="box box3">item 7</div></div>
+						<div class="item"><div class="box box3">item 8</div></div>
+						<div class="item"><div class="box box3">item 9</div></div>
+						<div class="item"><div class="box box3">item 10</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="console">
+		</div>
+
+	</body>
+</html>

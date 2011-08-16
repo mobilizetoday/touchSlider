@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../jquery.touchSlider.js"></script>
+		
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#gallery1').touchSlider({
+					mode: 'auto',
+					prevLink: 'a.prev',
+					nextLink: 'a.next',
+					center: true,
+					single: true
+				});
+
+				$('#gallery2').touchSlider({
+					mode: 'auto',
+					prevLink: 'a.prev',
+					nextLink: 'a.next',
+					single: true
+				});
+
+				$('#gallery3').touchSlider({
+					mode: 'auto',
+					prevLink: 'a.prev',
+					nextLink: 'a.next',
+					single: true
+				});
+
+				$('#gallery4').touchSlider({
+					mode: 'auto',
+					prevLink: 'a.prev',
+					nextLink: 'a.next',
+					single: true
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Automatic Mode No Animations (mode: 'auto', single: true)</h1>
+
+		<h2>B.1</h2>
+
+		<div class="gallery-holder centered">
+			<div class="gallery" id="gallery1">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="ibox"><img src="assets/tmb1.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb3.jpg" alt="" /></div></div>
+					</div>
+				</div>
+				<a href="#" class="prev">Prev</a>
+				<a href="#" class="next">Next</a>
+			</div>
+		</div>
+
+		<h2>B.2</h2>
+		
+		<div class="gallery-holder centered">
+			<div class="gallery" id="gallery2">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="cbox" style="width:110px;"><img src="assets/tmb1.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox" style="width:110px;"><img src="assets/tmb2.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox" style="width:110px;"><img src="assets/tmb3.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox" style="width:110px;"><img src="assets/tmb4.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox"><img src="assets/tmb5.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox"><img src="assets/tmb6.jpg" alt="" /></div></div>
+					</div>
+				</div>
+				<a href="#" class="prev">Prev</a>
+				<a href="#" class="next">Next</a>
+			</div>
+		</div>
+
+		<h2>B.3</h2>
+
+		<div class="gallery-holder centered">
+			<div class="gallery" id="gallery3">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="cbox"><img src="assets/tmb1.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox" style="width:640px;"><img src="assets/tmb2.jpg" alt="" style="height:150px" /></div></div>
+						<div class="item"><div class="cbox" style="width:110px;"><img src="assets/tmb3.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox" style="width:110px;"><img src="assets/tmb4.jpg" alt="" /></div></div>
+						<div class="item"><div class="cbox"><img src="assets/tmb6.jpg" alt="" /></div></div>
+					</div>
+				</div>
+				<a href="#" class="prev">Prev</a>
+				<a href="#" class="next">Next</a>
+			</div>
+		</div>
+
+		<h2>B.4</h2>
+
+		<div class="gallery-holder centered">
+			<div class="gallery" id="gallery4">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="cbox" style="width:580px;"><img src="assets/tmb7.jpg" alt="" style="height:150px" /></div></div>
+						<div class="item"><div class="cbox" style="width:640px;"><img src="assets/tmb8.jpg" alt="" style="height:150px" /></div></div>
+						<div class="item"><div class="cbox" style="width:320px;"><img src="assets/tmb9.jpg" alt="" style="height:150px" /></div></div>
+					</div>
+				</div>
+				<a href="#" class="prev">Prev</a>
+				<a href="#" class="next">Next</a>
+			</div>
+		</div>
+
+		<div id="console"></div>
+
+	</body>
+</html>

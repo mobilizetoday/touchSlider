@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../jquery.touchSlider.js"></script>
+		
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#gallery1').touchSlider({
+					mode: 'index',
+					center: true,
+					prevLink: 'a.prev',
+					nextLink: 'a.next',
+					onChange: function(prev, curr) {
+						$('#tabs a.tablink').removeClass('active');
+						$('#tabs a.tablink').filter(function(i){return i == curr}).addClass('active');
+					},
+					onStart: function() {
+						for (var i = 0; i < $('#gallery1').get(0).getCount(); i++) {
+						var el = $('<a href="#" class="tablink">'+(i+1)+'</a>');
+						el.attr('index', i);
+						$('#tabs').append(el);
+
+						el.bind('click', function(){
+							$('#gallery1').get(0).moveTo($(this).attr('index'));
+							return false;
+						});
+					}
+					}
+				});
+
+				$('#gallery2').touchSlider({
+					mode: 'index',
+					center: true,
+					single: true,
+					onChange: function(prev, curr) {
+						$('#tabs2 a.tablink').removeClass('active');
+						$('#tabs2 a.tablink').filter(function(i){return i == curr}).addClass('active');
+					},
+					onStart: function() {
+						for (var i = 0; i < $('#gallery2').get(0).getCount(); i++) {
+						var el = $('<a href="#" class="tablink">'+(i+1)+'</a>');
+						el.attr('index', i);
+						$('#tabs2').append(el);
+
+						el.bind('click', function(){
+							$('#gallery2').get(0).moveTo($(this).attr('index'));
+							return false;
+						});
+					}
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>onStart + onChange Callback</h1>
+
+		<div class="gallery-holder">
+			<div class="gallery" id="gallery1">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="ibox"><img src="assets/tmb1.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb3.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb4.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb5.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb6.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb7.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb8.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb9.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb10.jpg" alt="" /></div></div>
+					</div>
+				</div>
+				<a href="#" class="prev">Prev item</a>
+				<a href="#" class="next">Next Item</a>
+				<div id="tabs"></div>
+			</div>
+		</div>
+
+		<div class="gallery-holder centered">
+			<div class="gallery" id="gallery2">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><div class="ibox"><img src="assets/tmb8.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb9.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
+					</div>
+				</div>
+				<div id="tabs2"></div>
+			</div>
+		</div>
+
+		<div id="console"></div>
+
+	</body>
+</html>

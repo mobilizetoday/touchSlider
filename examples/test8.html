@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../jquery.touchSlider.js"></script>
+		
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#gallery2').touchSlider({
+					mode: 'index',
+					single: true
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Gallery with Single Item</h1>
+
+		<h2>mode: 'index', single: true</h2>
+
+		<div class="gallery-holder">
+			<div class="gallery" id="gallery2">
+				<div class="holder">
+					<div class="list centered">
+						<div class="item"><div class="ibox"><img src="assets/tmb1.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb3.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb4.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb5.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb6.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb7.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb8.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb9.jpg" alt="" /></div></div>
+						<div class="item"><div class="ibox"><img src="assets/tmb10.jpg" alt="" /></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="console"></div>
+
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../jquery.touchSlider.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#gallery1').touchSlider({
+					mode: 'shift'
+				});
+
+				$('#gallery1 a').click(function(){
+					alert(this.href);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Touch Events with Hyperlinks</h1>
+
+		<div class="gallery-holder">
+			<div class="gallery" id="gallery1">
+				<div class="holder">
+					<div class="list">
+						<div class="item"><a href="assets/img1.jpg" class="box box1">link 1</a></div>
+						<div class="item"><a href="assets/img2.jpg" class="box box1">link 2</a></div>
+						<div class="item"><a href="assets/img3.jpg" class="box box1">link 3</a></div>
+						<div class="item"><a href="assets/img4.jpg" class="box box1">link 4</a></div>
+						<div class="item"><a href="assets/img5.jpg" class="box box1">link 5</a></div>
+						<div class="item"><a href="assets/img6.jpg" class="box box1">link 6</a></div>
+						<div class="item"><a href="assets/img7.jpg" class="box box1">link 7</a></div>
+						<div class="item"><a href="assets/img8.jpg" class="box box1">link 8</a></div>
+						<div class="item"><a href="assets/img9.jpg" class="box box1">link 9</a></div>
+						<div class="item"><a href="assets/img10.jpg" class="box box1">link 10</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="console">
+		</div>
+
+	</body>
+</html>

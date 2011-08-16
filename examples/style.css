@@ -1,0 +1,223 @@
+body {
+	margin: 0;
+	padding: 10px;
+	font: 14px Helvetica, Arial, sans-serif;
+	color: #666;
+	max-width: 800px;
+	min-width: 300px;
+	margin: 0 auto;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 16px;
+	color: #333;
+}
+
+.box {
+	width: 96px;
+	height: 96px;
+	line-height: 96px;
+	text-align: center;
+	color: #FFF;
+	margin: 2px;
+	display: block;
+	text-decoration: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.box img {
+	width: 96px;
+	vertical-align: middle;
+}
+
+.box1 {background: red;}
+.box2 {background: blue;}
+.box3 {background: orange;}
+
+.ibox,
+.cbox,
+.fbox {
+	width: 210px;
+	height: 210px;
+	line-height: 210px;
+	text-align: center;
+	color: #FFF;
+	margin: 2px;
+	display: block;
+	text-decoration: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.centered .ibox,
+.centered .cbox{
+	margin: 2px auto;
+	padding: 0 2px;
+}
+
+
+.ibox img {
+	width: 210px;
+	vertical-align: middle;
+}
+
+.cbox img,
+.fbox img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+.fbox {
+	width: 600px;
+	height: 600px;
+	line-height: 600px;
+}
+
+span.delta {
+	position: absolute;
+	top: 0;
+	width: 1px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: magenta;
+}
+
+.ibox span.delta {
+	height: 210px;
+}
+
+.active .box {
+	outline: 1px dashed green;
+}
+
+.gallery-holder {
+	margin: 0 auto;
+	outline: 1px dashed #666;
+	margin: 0 auto 10px auto;
+	padding: 10px;
+}
+
+.gallery {
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery div.holder {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery div.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 9999px;
+	overflow: hidden;
+}
+
+.gallery div.item {
+	float: left;
+}
+
+/*.moving {
+	background: yellow;
+}*/
+
+.debug-item {
+	padding: 1px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: -1px;
+	color: #999;
+	font-size: 11px;
+}
+
+#menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu a {
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 6px 0;
+	margin-bottom: 6px;
+	font-size: 16px;
+	color: #333;
+	background: #EFEFEF;
+	text-decoration: none;
+	text-align: center;
+}
+
+a.prev,
+a.next,
+#moveTo,
+a.tablink,
+#counter {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 6px;
+	margin-bottom: 6px;
+	font-size: 16px;
+	color: #333;
+	background: #EFEFEF;
+	text-decoration: none;
+}
+a.prev {float: left;}
+a.next {float: right;}
+
+#moveTo,
+#counter {
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 200px;
+	text-align: center;
+}
+
+.focus .ibox {
+	outline: 1px dashed green;
+}
+.focus-old .ibox {
+	outline: 1px dashed red;
+}
+
+#tabs, #tabs2 {
+	text-align: center;
+}
+.tablink {
+	display: inline-block;
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	margin: 0 2px;
+}
+a.active {
+	border-color: #333;
+}
+
+#tabs2 .tablink {
+	display: inline-block;
+	overflow: hidden;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	margin: 0 10px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	text-indent: -9999px;
+}
+
+#tabs2 a.active {
+	background-color: #666;
+}

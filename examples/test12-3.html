@@ -20,16 +20,18 @@
 						$('#tabs a.tablink').filter(function(i){return i == curr}).addClass('active');
 					},
 					onStart: function() {
-						for (var i = 0; i < $('#gallery1').get(0).getCount(); i++) {
-						var el = $('<a href="#" class="tablink">'+(i+1)+'</a>');
-						el.attr('index', i);
-						$('#tabs').append(el);
+						var count = $('#gallery1').get(0).getCount();
+						$('#tabs').html('');
+						for (var i = 0; i < count; i++) {
+							var el = $('<a href="#" class="tablink">'+(i+1)+'</a>');
+							el.attr('index', i);
+							$('#tabs').append(el);
 
-						el.bind('click', function(){
-							$('#gallery1').get(0).moveTo($(this).attr('index'));
-							return false;
-						});
-					}
+							el.bind('click', function(){
+								$('#gallery1').get(0).moveTo($(this).attr('index'));
+								return false;
+							});
+						}
 					}
 				});
 
@@ -42,16 +44,19 @@
 						$('#tabs2 a.tablink').filter(function(i){return i == curr}).addClass('active');
 					},
 					onStart: function() {
-						for (var i = 0; i < $('#gallery2').get(0).getCount(); i++) {
-						var el = $('<a href="#" class="tablink">'+(i+1)+'</a>');
-						el.attr('index', i);
-						$('#tabs2').append(el);
+						var count = $('#gallery2').get(0).getCount();
+						$('#tabs2').html('');
+						for (var i = 0; i < count; i++) {
+							var el = $('<a href="#" class="tablink">'+(i+1)+'</a>');
+							el.attr('index', i);
+						
+							$('#tabs2').append(el);
 
-						el.bind('click', function(){
-							$('#gallery2').get(0).moveTo($(this).attr('index'));
-							return false;
-						});
-					}
+							el.bind('click', function(){
+								$('#gallery2').get(0).moveTo($(this).attr('index'));
+								return false;
+							});
+						}
 					}
 				});
 			});

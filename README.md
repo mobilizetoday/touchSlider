@@ -28,18 +28,18 @@ Ho to use
 =========
 Include the jquery and touchslider scripts to your `<head>` tag:
 
-`<script type="text/javascript" src="/path/jquery-1.6.2.min.js"/>`
-`<script type="text/javascript" src="/path/jquery.touchslider-1.0.js"/>`
+    <script type="text/javascript" src="/path/jquery-1.6.2.min.js"/>
+    <script type="text/javascript" src="/path/jquery.touchslider-1.0.js"/>
 
 Add below HTML structure with relevant image URLs:
 
-`<div class="holder">
-	<div class="list">
-		<div class="item"><div class="ibox"><img src="assets/tmb1.jpg" alt="" /></div></div>
-		<div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
-		<div class="item"><div class="ibox"><img src="assets/tmb3.jpg" alt="" /></div></div>
-	</div>
-</div>`
+    <div class="holder">
+	    <div class="list">
+		    <div class="item"><div class="ibox"><img src="assets/tmb1.jpg" alt="" /></div></div>
+		    <div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
+		    <div class="item"><div class="ibox"><img src="assets/tmb3.jpg" alt="" /></div></div>
+	    </div>
+    </div>
 
 Demo
 ====

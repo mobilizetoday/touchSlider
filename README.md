@@ -1,7 +1,7 @@
 [TouchSlider jQuery Plugin](http://widgets.mobilizetoday.com/widgets/image-gallery.html) - Mobile | Tablet | Desktop browsers touch slider
 ================================================================================================================================
 
-As part of ongoing development of the MobilizeToday platform [widgets](http://widgets.mobilizetoday.com/), we'd like to share our touch slider jQuery plugin that works across different mobile/tablet browsers as well as desktop ones. [Blog post](http://www.mobilizetoday.com/blog/touchslider-jquery-plugin/). 
+As part of ongoing development of the MobilizeToday platform [widgets](http://widgets.mobilizetoday.com/), we'd like to share our touch slider jQuery plugin that works across different mobile/tablet browsers as well as desktop ones. Announcement [blog post](http://www.mobilizetoday.com/blog/touchslider-jquery-plugin/). 
 
 Features
 ========
@@ -24,7 +24,7 @@ Features
 * Display current slide index 
 * and so on ...
 
-Ho to use
+How to use
 =========
 Include the jquery and touchslider scripts to your `<head>` tag:
 
@@ -49,7 +49,7 @@ Please take a look at the [examples folder at GitHub](https://github.com/mobiliz
 * [Callbacks onStart + onChange](http://www.mobilizetoday.com/touchSlider/test12-3.html)
 * [Image gallery widget home page](http://widgets.mobilizetoday.com/widgets/image-gallery.html)
 
-Tested at
+Tested @
 =============
 TouchSlider has been tested and compatible with:
 

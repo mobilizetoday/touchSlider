@@ -13,9 +13,9 @@ Features
 
 ### Three sliding modes: ###
 
-1. Fixed value scrolling. The value can be set in pixels or has percentage value relative to the available width.
-2. Per item scrolling.
-3. Automatic mode. When it automatically detects how many items can be placed within the available width. See example below.
+1. Fixed value scrolling: the value can be set in pixels or has percentage value relative to the available width
+2. Per item scrolling: item by item scrolling
+3. Automatic mode: automatically detects how many items can be placed within the available width. See example below
 
 ### Using callback functions you may build custom designed controls like: ### 
 
@@ -26,21 +26,20 @@ Features
 
 Ho to use
 =========
-Include the jquery and touchslider scripts to your <head> tag:
-`	
-<script type="text/javascript" src="/path/jquery-1.6.2.min.js"/>
-<script type="text/javascript" src="/path/jquery.touchslider-1.0.js"/>
-`
+Include the jquery and touchslider scripts to your `<head>` tag:
+
+`<script type="text/javascript" src="/path/jquery-1.6.2.min.js"/>`
+`<script type="text/javascript" src="/path/jquery.touchslider-1.0.js"/>`
+
 Add below HTML structure with relevant image URLs:
-`
-<div class="holder">
+
+`<div class="holder">
 	<div class="list">
 		<div class="item"><div class="ibox"><img src="assets/tmb1.jpg" alt="" /></div></div>
 		<div class="item"><div class="ibox"><img src="assets/tmb2.jpg" alt="" /></div></div>
 		<div class="item"><div class="ibox"><img src="assets/tmb3.jpg" alt="" /></div></div>
 	</div>
-</div>
-`
+</div>`
 
 Demo
 ====

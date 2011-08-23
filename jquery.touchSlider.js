@@ -4,6 +4,8 @@
  * 
  * License: MIT
  * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Version: 1.0
  */
 (function($) {
 	$.fn.reverse = [].reverse;

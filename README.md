@@ -17,7 +17,7 @@ Features
 2. Per item scrolling: item by item scrolling
 3. Automatic mode: automatically detects how many items can be placed within the available width. See example below
 
-### Using callback functions you may build custom designed controls like: ### 
+### Using callback functions you may build custom designed controls like: ###
 
 * Previous/next slide 
 * Navigate to particular slide by index

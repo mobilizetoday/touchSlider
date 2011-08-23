@@ -5,11 +5,11 @@ As part of ongoing development of the MobilizeToday platform [widgets](http://wi
 
 Features
 ========
-### Three possible options for animation: ###
+### Three animation options: ###
 
 1. Automatic (3D CSS transition is used if detected)
 2. JavaScript (jQuery methods will be used for animation)
-3. No Animation (slider will work with no animation, useful for browsers with poor support of JavaScript like BlackBerry OS 5)
+3. No Animation (slider will work with no animation, useful for the browsers with limited support of JavaScript like BlackBerry OS 5)
 
 ### Three sliding modes: ###
 
@@ -43,13 +43,13 @@ Add below HTML structure with relevant image URLs:
 
 Demo
 ====
-Please take a look at the examples folder at [GitHub](https://github.com/mobilizetoday/touchSlider/tree/master/examples) and below online demos:
+Please take a look at the [examples folder at GitHub](https://github.com/mobilizetoday/touchSlider/tree/master/examples) and below online demos:
 
 * [Animation modes](http://www.mobilizetoday.com/touchSlider/test1.html)
-* [onStart + onChange Callback](http://www.mobilizetoday.com/touchSlider/test12-3.html)
-* [Widget demo](http://widgets.mobilizetoday.com/widgets/image-gallery.html)
+* [Callbacks onStart + onChange](http://www.mobilizetoday.com/touchSlider/test12-3.html)
+* [Image gallery widget home page](http://widgets.mobilizetoday.com/widgets/image-gallery.html)
 
-Tested
+Tested at
 =============
 TouchSlider has been tested and compatible with:
 
@@ -68,8 +68,7 @@ Our future plans on improving this plugin include:
 
 Questions?
 ==========
-Feel free to give us your feedback on what options you’d like to see in the new version of TouchSlider plugin. 
-Your feedback on bugs (if any) also appreciated. Don’t forget to provide us with screenshots.
-
+Feel free to give [us](mailto:touchslider@mobilizetoday.com) your feedback on what options you’d like to see in the new version of TouchSlider plugin. 
+Your feedback/bugs (if any) also appreciated. Don’t forget to provide us with screenshots.
 
 Enjoy using MobilizeToday TouchSlider plugin in your mobile web projects!

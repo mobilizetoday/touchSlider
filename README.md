@@ -43,11 +43,7 @@ Add below HTML structure with relevant image URLs:
 
 Demo
 ====
-Please take a look at the [examples folder at GitHub](https://github.com/mobilizetoday/touchSlider/tree/master/examples) and below online demos:
-
-* [Animation modes](http://www.mobilizetoday.com/touchSlider/test1.html)
-* [Callbacks onStart + onChange](http://www.mobilizetoday.com/touchSlider/test12-3.html)
-* [Image gallery widget home page](http://widgets.mobilizetoday.com/widgets/image-gallery.html)
+See live demo, usage examples and documentation on [http://www.mobilizetoday.com/freebies/touchslider](http://www.mobilizetoday.com/freebies/touchslider)
 
 Tested @
 =============

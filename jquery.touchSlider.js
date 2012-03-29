@@ -7,7 +7,7 @@
  * 
  * Version: 1.0
  */
-(function($) {
+;(function($) {
 	$.fn.reverse = [].reverse;
 	
 	$.fn.touchSlider = function(options){
@@ -98,11 +98,10 @@
 			setCurrentOffset(0);
 
 			if(options.touch) {
-				var b = box.get(0);
-				b.addEventListener(events[eventIndex]['start'], touchEvent, false);
-				b.addEventListener(events[eventIndex]['end'], touchEvent, false);
-				b.addEventListener(events[eventIndex]['leave'], touchEvent, false);
-				b.addEventListener(events[eventIndex]['move'], touchEvent, false);
+				box.bind(events[eventIndex]['start'], this, touchEvent);
+				box.bind(events[eventIndex]['end'], this, touchEvent);
+				box.bind(events[eventIndex]['leave'], this, touchEvent);
+				box.bind(events[eventIndex]['move'], this, touchEvent);
 			}
 
 			if(options.prevLink) {
@@ -120,8 +119,8 @@
 				});
 			}
 
-			window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", resizeEvent, false);
-			window.addEventListener("load", resizeEvent, false);
+			$(window).bind("onorientationchange" in window ? "orientationchange" : "resize", this, resizeEvent);
+			$(window).bind("load", this, resizeEvent);
 
 			function resizeEvent() {
 				setTimeout(initPosition, 200);
@@ -292,7 +291,7 @@
 			
 
 			function touchEvent(e) {
-				var touch = (eventIndex) ? e.touches[0] : e;
+				var touch = (eventIndex) ? e.originalEvent.touches[0] : e;
 				
 				switch(e.type)
 				{
@@ -310,7 +309,6 @@
 			};
 
 			function touchMove(e, touch) {
-
 				if (isTouching) {
 					
 					if (options.lockScroll && e.type != 'click') e.preventDefault();
@@ -459,6 +457,8 @@
 				var itemsWidth = 0;
 				var itemsBeforeWidth = 0;
 
+				var width = holder.width();
+
 				$.each(graphItems, function(i){
 					if (i < currentIndex) {
 						itemsBeforeWidth += this[0];
@@ -466,7 +466,7 @@
 					itemsWidth +=  this[0];
 				});
 
-				var long = graphItems[currentIndex].length > 2 ? true : false;
+				var _long = graphItems[currentIndex].length > 2 ? true : false;
 
 				if(itemsWidth <= width) {hideLink('both');}else{showLink('both');}
 
@@ -475,13 +475,13 @@
 					setCurrentOffset(possibleOffset);
 					moveTo(currentOffset);
 					return;
-				} 
+				}
 
 				var possibleOffset = 0;
 				if (touchOffset > 0) {
-					if(currentIndex < graphItems.length-1 || (currentIndex >= graphItems.length-1 && long)) {
+					if(currentIndex < graphItems.length-1 || (currentIndex >= graphItems.length-1 && _long)) {
 
-						if (long && graphItems[currentIndex][0] - width > graphItems[currentIndex][2]) {
+						if (_long && graphItems[currentIndex][0] - width > graphItems[currentIndex][2]) {
 
 							graphItems[currentIndex][2] += width;
 
@@ -521,9 +521,9 @@
 					}
 
 				} else if (touchOffset < 0) {
-					if(currentIndex > 0 || (currentIndex <= 0 && long)) {
+					if(currentIndex > 0 || (currentIndex <= 0 && _long)) {
 
-						if (long && graphItems[currentIndex][2] > 0) {
+						if (_long && graphItems[currentIndex][2] > 0) {
 
 							graphItems[currentIndex][2] -= width;
 
@@ -563,7 +563,7 @@
 						moveTo(currentOffset);
 					}
 				}  else {
-					if (long) {
+					if (_long) {
 						possibleOffset = 0 - itemsBeforeWidth;
 					} else {
 						possibleOffset = 0 - (itemsBeforeWidth + graphItems[currentIndex][0]/2)  + width/2;
@@ -702,6 +702,7 @@
 			};
 
 			function setCurrentOffset(offset) {
+				offset = parseInt(offset, 10);
 				if (offset != currentOffset) {
 					previousOffset = currentOffset;
 					currentOffset = offset;

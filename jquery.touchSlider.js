@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2011 Mobile Web Solutions Inc, d/b/a MobilizeToday.com
+ * Copyright (c) 2011-2012 Mobile Web Solutions Inc, d/b/a MobilizeToday.com
  * All rights reserved.
- * 
+ *
  * License: MIT
  * http://www.opensource.org/licenses/mit-license.php
- * 
- * Version: 1.0
+ *
+ * Version: 1.1
  */
 ;(function($) {
 	$.fn.reverse = [].reverse;
@@ -457,7 +457,7 @@
 				var itemsWidth = 0;
 				var itemsBeforeWidth = 0;
 
-				var width = holder.width();
+				width = holder.width();
 
 				$.each(graphItems, function(i){
 					if (i < currentIndex) {
